@@ -28,4 +28,4 @@ jobs:
           --set image.tag=${{ github.sha }}
           --set imagePullSecrets[0].name=regcred-github-com
           --history-max 2
-          forward-head-posture-tfrecord ./helm
+          python-starter ./helm
